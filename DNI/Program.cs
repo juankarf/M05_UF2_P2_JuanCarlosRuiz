@@ -18,7 +18,9 @@ namespace DNI
         /// <returns></returns>
         public static char LetterNIF(int number)
         {
-            return '-';
+            string letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+            int resto = number % 23;
+            return letras[resto];
         }
     }
 }
