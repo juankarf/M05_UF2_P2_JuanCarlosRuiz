@@ -16,14 +16,14 @@ namespace Replace
             string result = Replace(response, search, replace);
             Console.WriteLine(result);
         }
-        public static string Replace(string text, char a, char b)
+        public static string Replace(string text, char search, char replace)
         {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < text.Length; i++)
             {
-                if(text[i] == a)
+                if(text[i] == search)
                 {
-                    sb.Append(a);
+                    sb.Append(replace);
                 }
                 else
                 {
